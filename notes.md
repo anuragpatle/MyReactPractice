@@ -45,7 +45,7 @@ console.log(name) //Max
 console.log(age) //undefined
 
 
-## Reference and primitive types
+## 4 Reference and primitive types
 const person = {
 	name: "Max"
 };
@@ -65,3 +65,17 @@ If you do not want such behaviour then use spread operator.
 const secondPerson = {
 	...person
 }
+
+## 5 JSX syntax
+Writing html code with javascript code:
+
+function App() {
+  return (
+    <div>
+      <h2>Let's get --- started!</h2>
+    </div>
+  );
+}
+
+
+
