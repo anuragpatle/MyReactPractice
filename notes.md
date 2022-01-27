@@ -1,10 +1,10 @@
 React is a JavaScript library for building user interfaces.
 React is all about components.
 
-## 1 Arrow Functions
+# 1 Arrow Functions
 Arrow functions are used in order to deal with the problem of this keywords.
 
-## 2 Spread and Rest Operators
+# 2 Spread and Rest Operators
 + Spread Operator: Used to split up arry elements OR object properties. Denoted as '...'
 const newArray = [...oldArray, 1, 2]
 
@@ -29,7 +29,7 @@ myFunction(-1, ...args, 2, ...[3]);
 
 Rest syntax looks exactly like spread syntax. In a way, rest syntax is the opposite of spread syntax. Spread syntax "expands" an array into its elements, while rest syntax collects multiple elements and "condenses" them into a single element.
 
-## 3 Destructuring
+# 3 Destructuring
 + Easily extract array elements or object properties and store them in variables
 
 1. Array Destructuring
@@ -45,7 +45,7 @@ console.log(name) //Max
 console.log(age) //undefined
 
 
-## 4 Reference and primitive types
+# 4 Reference and primitive types
 const person = {
 	name: "Max"
 };
@@ -66,7 +66,7 @@ const secondPerson = {
 	...person
 }
 
-## 5 JSX syntax
+# 5 JSX syntax
 Writing html code with javascript code:
 
 function App() {
@@ -78,4 +78,27 @@ function App() {
 }
 
 
+# 6 Components
+Components are independent and reusable bits of code. They serve the same purpose as JavaScript functions, but work in isolation and return HTML.
 
+Components come in two types, Class components and Function components.
+
+In older React code bases, you may find Class components primarily used. It is now suggested to use Function components along with Hooks, which were added in React 16.8. There is an optional section on Class components for your reference.
+
+1. Class Components:
+```
+	class Car extends React.Component {
+
+		render() {
+			return \<h2>Hi, I am a Car!</h2>;
+		}
+	}
+```
+
+2. Function Components:
+
+```
+	function Car() {
+  		return <h2>Hi, I am a Car!</h2>;
+	}
+```
