@@ -104,3 +104,20 @@ In older React code bases, you may find Class components primarily used. It is n
   		return <h2>Hi, I am a Car!</h2>;
 	}
 ```
+
+# 6 React Hooks
+Hooks allow function components to have access to state and other React features without writting classes. Because of this, class components are generally no longer needed.
+Hooks allow function components to have access to state and other React features. Because of this, class components are generally no longer needed.
+
+# 6.1 useState
++ The React useState Hook allows us to track state in a function component.
+
++ State generally refers to data or properites that need to be tracking in an application.
+
++ We initialize our state by calling useState in our function component.
+
++ useState accepts an initial state and returns two values:
+- The current state.
+- A function that updates the state.
+
+const [color, setColor] = useState("red");
