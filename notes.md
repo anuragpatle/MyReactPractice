@@ -121,3 +121,39 @@ Hooks allow function components to have access to state and other React features
 - A function that updates the state.
 
 const [color, setColor] = useState("red");
+
+
+# 7 Routing
+
+# 7.1 Outlet
++ The <Outlet> element is used as a placeholder. In this case an <Outlet> enables the Users component to render its child routes.
+
+# 7.2 Index Routes
++ Index routes are possibly the most difficult concept in React Router for people to understand. So if you've struggled before, we hope this can clarify it for you.
+  Right now you're probably looking at one of the invoices. Click on the "Invoices" link in the global nav of your app. Notice that the main content area goes blank! We can fix this with an "index" route.
+
+	```
+	<Route path="invoices" element={<Invoices />}>
+		<Route
+			index
+			element={
+			<main style={{ padding: "1rem" }}>
+				<p>Select an invoice</p>
+			</main>
+			}
+		/>
+		<Route path=":invoiceId" element={<Invoice />} />
+		</Route>
+	```
+
+	Sweet! Now the index route fills the empty space!
+
+	Notice it has the index prop instead of a path. That's because the index route shares the path of the parent. That's the whole point--it doesn't have a path.
+
+	Maybe you're still scratching your head. There are a few ways we try to answer the question "what is an index route?". Hopefully one of these sticks for you:
+
+	Index routes render in the parent routes outlet at the parent route's path.
+	Index routes match when a parent route matches but none of the other children match.
+	Index routes are the default child route for a parent route.
+	Index routes render when the user hasn't clicked one of the items in a navigation list yet.
+
