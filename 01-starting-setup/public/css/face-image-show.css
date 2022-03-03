@@ -1,0 +1,93 @@
+.mySlides {
+  display: none;
+  margin: auto;
+}
+
+.face-image {
+    float: left;
+}
+
+.face-image-details {
+    float: left;
+    float: left;
+    padding: 13px 33px;
+}
+
+.mySlides img {
+  vertical-align: middle;
+  width: 250px;
+  height: 260px;
+  padding: 2px;
+  margin: 5px;
+  border:1px dashed DarkSlateBlue;;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+/* The dots/bullets/indicators */
+
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.ele {
+    animation: 2s fadeIn;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+  }
+  
+  .ele:hover {
+    background-color: #123;
+  }
+  
+  @keyframes fadeIn {
+    99% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
+}
+
+
