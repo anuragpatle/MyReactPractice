@@ -9,6 +9,9 @@ import Expenses from "./routes/expenses";
 import Invoices from "./routes/invoices";
 import Invoice from "./routes/invoice";
 import "./index.css"
+import LiveFaceDetections from "./routes/live-face";
+import TimeWiseSentiments from "./routes/time-wise-sentiments";
+
 
 const rootElement = document.getElementById("root");
 render(
@@ -16,6 +19,8 @@ render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="expenses" element={<Expenses />} />
+        <Route path="live-face" element={<LiveFaceDetections />} />
+        <Route path="timewise" element={<TimeWiseSentiments />} />
         <Route path="invoices" element={<Invoices />}>
           <Route
             index

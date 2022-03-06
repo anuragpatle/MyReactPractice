@@ -33,9 +33,9 @@ function drawFloorWiseDailyChart(neutral, happy, notHappy, floor, elementId) {
   data.addColumn("string", "Topping");
   data.addColumn("number", "Slices");
   data.addRows([
-      ["Likely Neutral", neutral],
-      ["Likely Not Happy", notHappy],
-      ["Likely Happy", happy]
+    ["Likely Neutral", neutral],
+    ["Likely Not Happy", notHappy],
+    ["Likely Happy", happy]
   ]);
 
   // Set chart options
@@ -124,3 +124,5 @@ function drawMonthWiseChart() {
   );
   chart.draw(data, options);
 }
+
+export default callCharts;
