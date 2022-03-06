@@ -1,7 +1,5 @@
 import { Outlet, Link } from "react-router-dom";
 import Header from "./header/header";
-import SideMenu from "./side-menu/sidemenu";
-import LiveFaceDetections from "./routes/live-face";
 
 export default function App() {
   return (
